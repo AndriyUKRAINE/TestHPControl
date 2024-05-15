@@ -1,0 +1,665 @@
+    /* Кольори сайту */
+.forhelp{
+    /* Колір заднього фону */
+    background-color: #156F83;
+    /* Колір шрифту */
+    color: #156F83;
+    /* Колір кнопки */
+    background-color: #D9D9D9;
+    /* Колір форми */
+    background-color: #0799B9;
+    /* Тип шрифту */
+    font-family: 'Times New Roman';
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #156F83;
+    height: 100%;
+
+    /* width: 1920px;
+    height: 1080px; */
+}
+
+.element {
+    display: block;
+    /* margin: 0%; */
+    /* margin: auto; */
+}
+
+.header {
+    display: flex;
+    margin: auto;
+    width: 1400px;
+    height: 70px;
+    background-color: #0799B9;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0px 0px 30px 30px;
+}
+
+/* Стиль кнопок */
+.headerButton {
+    display: inline-flex;
+    height: 55px;
+    /* --------------------100--------- */
+    padding: 9px 20px 10px 15px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 45px;
+    background-color: #D9D9D9;
+    margin-right: 40px;
+    color: #746E99;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-color: #D9D9D9;
+    cursor: pointer;
+}
+.png {
+    display: flex;
+    height: 50px;
+    align-items:start;
+    /* background-color: none; */
+
+
+    background-color: #D9D9D9;
+    /* background-color: #156F83; */
+    
+    border-width: 2px;
+
+    color: white;
+    border: none;
+
+    border-radius: 45px;
+
+    cursor: pointer;
+    /* padding: 8px 12px; */
+    margin-right: 5px;
+}
+
+/* Дизайн першої сторінки */
+.firstPage {
+    margin: auto;
+    margin-top: 20px;
+    background-color: #0799B9;
+    border-radius: 30px 30px 0px 0px;
+    width: 1400px;
+    min-height: 100vh;
+} 
+
+.nameSite {
+    display: flex;
+    margin: auto;
+    width: 678px;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.textstyle{
+    color: #C4BAFD;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.imegConteiner{
+    display: flex;
+    margin: auto;
+    background-color: #0799B9;
+}
+
+.conteinerDiv {
+    display: flex;
+    margin: auto;
+    background-color: #0799B9;
+}
+
+.boxDiv {
+    margin: auto;
+    display: flex;
+    width: 360px;
+    height: 237px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #C4BAFD;
+    border-radius: 30px 30px 30px 30px;
+}
+
+p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #746E99;
+    text-align:center;
+    font-family: IBM Plex Mono;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* justify-content: center; */
+}
+
+/* --------------------------- */
+
+.mainPng {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+}
+
+.lastbutoon {
+    display: flex;
+    margin: auto;
+    background-color: #0799B9;
+}
+
+.regPage{
+    display: flex;
+    width: 763px;
+    height: 102px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+
+    margin: auto;
+    justify-content:center;
+    align-items:center;
+
+    border-radius: 45px 45px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Це вирівнює кнопку по центру вздовж горизонталі */
+    padding: 10px;
+    color: #746E99;
+    border: none;
+    cursor: pointer;
+
+    color: #746E99;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#nomer2 {
+    display: none;
+}
+
+#nomer3 {
+    display: none;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 80vh;
+    background-color: white;
+    margin: auto;
+    border-radius: 0px 0px 45px 45px;
+
+}
+
+.registrationElements {
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 550px;
+    height: 75vh;
+    background-color: #156F83;
+    margin: auto;
+    border-radius: 45px 45px 45px 45px;
+    flex-direction: column;
+
+}
+
+.chendgReg {
+    display:inline-flex;
+    margin-top: 40px;
+    width: 350px;
+    height: 50px;
+    background-color: #0799B9;
+    border-radius: 45px 45px 45px 45px;
+}
+
+.chendgReg2 {
+    display:inline-flex;
+    margin-top: 40px;
+    width: 350px;
+    height: 50px;
+}
+
+.buttonRefAut {
+    display: flex;
+    width: 250px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 34.5px;
+    background: #D9D9D9;    
+    /* margin-bottom: 10px; */
+
+    color: #746E99;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mainPng2 {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.reginfo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    /* margin: auto; */
+}
+
+.textRegPage {
+    color: #C8C3E8;
+    margin-top: 10px;
+    font-family: IBM Plex Mono;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-content:start;
+}
+
+.createInput {
+    background-color: rgb(237, 237, 237);
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+    border:1px solid #C8C3E8;
+    border-radius: 45px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    border-color: white;
+}
+
+.aytoreg{
+    margin-top: 10px;
+}
+
+/* Дизайн сторінки Sleep */
+.sleepPage{
+    display: none;
+}
+.sleepText{
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.textPos {
+    display: flex;
+    flex-direction: column;
+}
+.firstSleepPage{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #0799B9;
+    border-radius: 30px 30px 30px 30px;
+    width: 1400px;
+    height: 200px;
+    justify-content: center;
+}
+
+.header2 {
+    display: flex;
+    margin: auto;
+    width: 1400px;
+    height: 70px;
+    background-color: #0799B9;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 15px;
+}
+
+/* #hedBut7 {
+    margin-left: 200px;
+    margin-right: 200px;
+} */
+
+.sleepButtonPos {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sleepBut {
+    display: flex;
+    width: 360px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #156F83;
+}
+.textSyleSleepBut{
+    color: #FFF;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header3 {
+    display: flex;
+    margin: auto;
+    width: 1400px;
+    height: 330px;
+    background-color: #0799B9;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 15px;
+}
+
+.addNewInfSleep {
+    display: flex;
+    width: 1350px;
+    height: 300px;
+    background-color: #90D7E7;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.conteiner {
+    display: flex;
+    /* margin: auto; */
+    display: none;
+}
+
+.conteiner2 {
+    display: block;
+    margin: auto;
+    display: none;
+}
+
+.conteiner3 {
+    display: flex;
+    /* flex-direction: column; 
+    align-items: center;   */
+    /* margin: auto; */
+    display: none;
+}
+
+.moreInfoSleep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1350px;
+    height: 130px;
+    background-color: #90D7E7;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 15px;
+}
+
+.historySleep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1350px;
+    height: 60px;
+    background-color: #90D7E7;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 15px;
+}
+
+.generRecom {
+    display: flex;
+    margin: auto;
+    width: 1400px;
+    height: 100vh;
+    background-color: #0799B9;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 15px;
+    display: none;
+    position: relative;
+}
+
+.specifiRecom {
+    display: flex;
+    margin: auto;
+    width: 1400px;
+    height: 100vh;
+    background-color: #0799B9;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 15px;
+    display: none;
+    position: relative;
+}
+
+.generBut {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 150px;
+    height: 50px;
+    /* justify-content: left; */
+    /* align-items:end; */
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #156F83;
+    color: #FFF;
+
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sleepTextGener {
+    color: #FFF;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+/* del */
+
+.pngDel{
+    width: 100%;
+    height: 100%;
+}
+
+.specifiRecom {
+    display: flex;
+    display: none;
+}
+
+.textPosCheng {
+    margin-top: 40px;
+}
+
+.posButPos{
+    display: flex;
+    margin-top: 37px;
+    margin-left: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* AI Button */
+
+.aiBut {
+    position: absolute;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 84%;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.aiBut img{
+    display: flex;
+    height: 50px;
+    align-items:center;
+    opacity: 1;
+}
+
+.clicked {
+    background-color: #156F83; /* Колір при натисканні */
+}
+
+
+.divAi {
+    position: absolute;
+    /* margin-left: 100%; */
+    width: 500px;
+    height: 300px;
+    background-color: #C4BAFD;
+    right: 3.8%;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid #156F83;
+}
+
+.elementstructure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.styleAi {
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 20px;
+}
+
+.elementstructure input{
+    background-color: rgb(237, 237, 237);
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+    border:1px solid #C8C3E8;
+    border-radius: 45px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.elementstructure button{
+    border-radius: 45px;
+    background-color: #D9D9D9;
+    margin-right: 40px;
+    color: #746E99;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.elementstructure p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #746E99;
+    text-align:center;
+    font-family: IBM Plex Mono;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    width: 400px;
+    overflow: auto;
+    word-wrap: break-word;
+}І
+
+.work {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #C4BAFD;
+    border-radius: 30px 30px 30px 30px;
+    word-wrap: break-word;
+}

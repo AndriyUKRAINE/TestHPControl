@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HPControl</title>
+        <link rel="icon" type="image/x-icon" href="/ForPicher/health-insurance.png">
+        <link rel="stylesheet" href="/CssFile/style.css">
+        <script src="/JsFile/index.js"></script>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script> -->
+    </head>
+    <body>
+        <div class="element">
+            <div class="header">
+                <button id="hedBut1" class="headerButton" onclick="hideColorOll(), hedBut1Fun(), hideOll()" >
+                    <img id="pngBek1" class="png" src="/ForPicher/user.png" alt="Опис зображення">
+                    <span>My Profile</span>
+                </button>
+                <button id="hedBut2" class="headerButton" onclick="hideColorOll(), hedBut2Fun(), hideOll()" >
+                    <img id="pngBek2" class="png" src="/ForPicher/heart.png" alt="Опис зображення">
+                    <span>Health</span>
+                </button>
+                <button id="hedBut3" class="headerButton" onclick="hideColorOll(), hedBut3Fun(), hideOll(), sleepPage()">
+                    <img id="pngBek3" class="png" src="/ForPicher/sleeping.png" alt="Опис зображення">
+                    <span>Sleep</span>
+                </button>
+                <button id="hedBut4" class="headerButton" onclick="hideColorOll(), hedBut4Fun(), hideOll()" >
+                    <img id="pngBek4" class="png" src="/ForPicher/dumbbell.png" alt="Опис зображення">
+                    <span>Training</span>
+                </button>
+                <button id="hedBut5" class="headerButton" onclick="hideColorOll(), hedBut5Fun(), hideOll()" >
+                    <img id="pngBek5" class="png" src="/ForPicher/dish.png" alt="Опис зображення">
+                    <span>Nutrition</span>
+                </button>
+
+                <button id="aiButid" class="aiBut" onclick="aicolorcheng()">
+                    <img src="/ForPicher/microchip.png" alt="Опис зображення">
+                </button>
+
+            </div>  
+
+            <div class="divAi" id="divAiid">
+                <!-- <script type="py" src="/OpenAi/python.py" config="/OpenAi/pyjson.json"></script> -->
+                <div class="elementstructure">
+                    <input class="styleAi" type="text" id="inputField" placeholder="Введіть ваш запит">
+                    <button class="styleAi" onclick="showResult()">Відправити</button>
+                    <div class="work">
+                        <p1 class="" id="result">Памятайте даний чат для уточнення деталей тому не використовуйте його як порадника до дій</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="generRecom" id="generRecID">
+                <button class="generBut" onclick="hideOll(), sleepPage()"> Back </button>
+                <div class="textPosCheng">
+                    <p class="sleepTextGener"> Tips for Better Sleep </p>
+                    <p class="sleepTextGener"> * Be consistent. Go to bed at the same time each night" and get up <br>at the same time each morning, including on the weekends</p>
+                    <p class="sleepTextGener"> * Make sure your bedroom is quiet, dark, relaxing, and at a comfortable temperature </p>
+                    <p class="sleepTextGener"> * Remove electronic devices, such as TVs, computers, and smart phones, from the bedroom </p>
+                    <p class="sleepTextGener"> * Avoid large meals, caffeine, and alcohol before bedtime </p>
+                    <p class="sleepTextGener"> * Get some exercise. Being physically active during the day can help you <br> fall asleep more easily at night. </p>
+                    <p class="sleepTextGener"> </p>
+                    <p class="sleepTextGener" style="color: rgb(243, 168, 145);"> If you have had sleep problems for a long time that you cannot solve on your own,<br> we advise you to consult a doctor, this site is necessary if you have mild problems, <br>and not protracted processes. </p>
+                </div>
+            </div>
+
+            <div class="specifiRecom" id="specificID">
+                <button class="generBut" onclick="hideOll(), sleepPage()"> Back </button>
+                <div class="posButPos">
+                    <button id="tipForMan" class="headerButton" onclick="hideOllDiv(),seeManDiv()" style="height: 50px; font-size: 24px;">
+                        <span>TipForMan</span>
+                    </button>
+                    <button id="tipWomanMan" class="headerButton" onclick="hideOllDiv(),seeWomanDiv()" style="height: 50px; font-size: 24px;">
+                        <span>TipForWoman</span>
+                    </button>
+                    <button id="tipChildMan" class="headerButton" onclick="hideOllDiv(),seeChildDiv()" style="height: 50px; font-size: 24px;">
+                        <span>TipForChildren</span>
+                    </button>
+                    <button id="tipSolderMan" class="headerButton" onclick="hideOllDiv(),seeSolderDiv()" style="height: 50px; font-size: 24px;">
+                        <span>TipForSolder</span>
+                    </button>
+                </div>
+                <div class="divTipForMan" id="manDiv" style="display: none; flex-direction: column;">
+                    <p class="sleepTextGener"> Tips for Better Sleep for Man </p>
+                    <p class="sleepTextGener"> Avoid alcohol and tobacco before bed, as these substances can affect sleep quality </p>
+                    <p class="sleepTextGener"> Avoid heavy meals before bed. Try to choose light snacks that do not interfere with falling asleep </p>
+                    <p class="sleepTextGener"> Maintain a healthy weight, as being overweight can lead to sleep problems </p>
+                    <p class="sleepTextGener"> Try not to postpone sleep for a long time. Insufficient sleep can negatively affect physical and mental health </p>
+                </div>
+
+                <div class="divTipForWoman" id="womanDiv" style="display: none; flex-direction: column;" >
+                    <p class="sleepTextGener"> Tips for Better Sleep for Woman </p>
+                    <p class="sleepTextGener"> Avoid coffee and other caffeinated drinks or foods at least a few hours before bedtime</p>
+                    <p class="sleepTextGener"> Try to spend the time before going to bed in a calm mode. It can be reading, listening to music or meditating </p>
+                    <p class="sleepTextGener"> A warm bath or shower before bed can help you relax and improve the quality of your sleep </p>
+                    <p class="sleepTextGener"> A light massage or yoga before bed can help relax the body and improve sleep </p>
+                </div>
+
+                <div class="divTipForChildren" id="childDiv" style="display: none; flex-direction: column;" >
+                    <p class="sleepTextGener"> Tips for Better Sleep for Children </p>
+                    <p class="sleepTextGener"> Create a consistent sleep routine. Go to bed and wake up at the same time every day,<br>taking into account your child's age and needs</p>
+                    <p class="sleepTextGener"> Limit the use of screens (smartphones, TVs, computers) before bed, as blue light <br>can affect natural sleep rhythms </p>
+                    <p class="sleepTextGener"> Provide the child with sufficient physical activity during the day, but avoid<br>intensive training right before bedtime </p>
+                    <p class="sleepTextGener"> Soft toys or stuffed animals can provide a child with comfort and security during sleep </p>
+                </div>
+
+                <div class="divTioForSolder" id="solderDiv" style="display: none; flex-direction: column;" >
+                    <p class="sleepTextGener"> Tips for Better Sleep for Solder </p>
+                    <p class="sleepTextGener"> Use blackout curtains and headphones to reduce outside exposure </p>
+                    <p class="sleepTextGener"> The smell of lavender or other relaxing aromas can help you fall asleep </p>
+                    <p class="sleepTextGener"> Avoid using electronics before bed. Blue light from screens can interfere with falling asleep </p>
+                    <p class="sleepTextGener"> Create personal bedtime rituals that signal to your body that it's time to rest </p>
+                </div>
+            </div>
+
+            <div class="sleepPage" id="sleepPage">
+                <div class="firstSleepPage">
+                    
+                    <div class="textPos">
+                        <p class="sleepText">If you have any problems with sleep, you can choose one of the options below</p>
+                    </div>
+
+                    <div class="sleepButtonPos">
+                        <button class="sleepBut" id="sleepBut1" onclick="closesleepPage(),generRecomend()" >
+                            <span class="textSyleSleepBut"> General recommendations </span>
+                        </button>
+                        <button class="sleepBut" id="sleepBut2" onclick="closesleepPage(),specRecomend()" >
+                            <span class="textSyleSleepBut"> Choose a specific reason </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="header2">
+                    <button id="hedButFunSleep1" class="headerButton" onclick="hideFunColor(), funSleep1(), hideOllFunSleep(), funSleepMoreInfo()" >
+                        <img id="pngBekFunSleep1" class="png" src="/ForPicher/search.png" alt="Опис зображення">
+                        <span>MoreInformation</span>
+                    </button>
+                    <button id="hedButFunSleep2" class="headerButton" onclick="hideFunColor(), funSleep2(), hideOllFunSleep(), funSleepAdd()">
+                        <img id="pngBekFunSleep2" class="png" src="/ForPicher/add.png" alt="Опис зображення">
+                        <span>AddNewInform</span>
+                    </button>
+                    <button id="hedButFunSleep3" class="headerButton" onclick="hideFunColor(), funSleep3(), hideOllFunSleep(), funSleepHistory()">
+                        <img id="pngBekFunSleep3" class="png" src="/ForPicher/history.png" alt="Опис зображення">
+                        <span>History</span>
+                    </button>
+                </div>
+
+                <div class="header3">
+                    <div class="conteiner" id="conteinerSleepMoreInfo">
+                        <div class="moreInfoSleep" id="funSleepMoreInfo1">
+                            <img id="pngBekFunSleep2" class="pngDel" src="/ForPicher/Group 77.png" alt="Опис зображення">
+                        </div>
+                        <div class="moreInfoSleep" id="funSleepMoreInfo2">
+    
+                        </div>
+                        
+                        <!-- <div class="moreInfoSleep" id="funSleepMoreInfo3">
+    
+                        </div> -->
+                    </div>
+                    <div class="conteiner2" id="conteinerSleepAddNewInf">
+                        <div class="addNewInfSleep" id="funSleepAddInfo">
+                            <img id="pngBekFunSleep2" class="pngDel" src="/ForPicher/Group 73.png" alt="Опис зображення">
+                        </div>
+                    </div>
+                    <div  class="conteiner3" id="conteinerHistorySleep">
+                        <div class="historySleep" id="funSleepHistory">
+                            <img id="pngBekFunSleep2" class="pngDel" src="/ForPicher/Group 74.png" alt="Опис зображення">
+                        </div>
+
+                        <div class="historySleep" id="funSleepHistory2">
+
+                        </div>
+                        <div class="historySleep" id="funSleepHistory3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="firstPage" id="firstPage1">
+                <div id="nomer1">
+                    <div class="nameSite">
+                        <h1 class="textstyle">HP Control</h1>
+                    </div>
+                    <div class="conteinerDiv">
+                        <div class="boxDiv">
+                            <p1>Записуйте медичні дані на сайті</p>
+                        </div>
+                        <div class="boxDiv">
+                            <p1>Стежте за своїм режимом сну і фізичною активністю</p>
+                        </div>
+                        <div class="boxDiv">
+                            <p1>Переглядайте свій стан здоров’я і як ви харчуєтесь</p>
+                        </div>
+                    </div>
+                    <div class="imegConteiner">
+                        <img class="mainPng" src="/ForPicher/personal-information.png" alt="Опис зображення">
+                        <img class="mainPng" src="/ForPicher/data.png" alt="Опис зображення">
+                        <img class="mainPng" src="/ForPicher/web-analytics.png" alt="Опис зображення">
+                    </div>
+                    <div class="lastbutoon">
+                        <button class="regPage" onclick="hideOll(), registr(), hedBut1Fun(), open123()">Authorization/Registration</button>
+                    </div>
+                </div>
+
+                <div id="nomer2">
+                    <div class="content2">
+                        <div class="registrationElements">
+
+                            <div class="chendgReg">
+                                <img class="mainPng2" src="/ForPicher/online-registration.png" alt="Опис зображення">
+                                <button class="buttonRefAut">Registration</button>
+                            </div>
+                            <div class="chendgReg2">
+                                <img class="mainPng2" src="/ForPicher/authorization.png" alt="Опис зображення">
+                                <button class="buttonRefAut" onclick="hideOll(),authorization(), open123()">Authorization</button>
+                            </div>
+
+                            <div class="reginfo">
+                                <p2 class="textRegPage">Gmail</p2>
+                                <input class="createInput" id="inputCreate1" type="text"  name="textlink" placeholder="Gmail">
+
+                                <p2 class="textRegPage">Password</p2>
+                                <input class="createInput" id="inputCreate2" type="password"  name="textlink" placeholder="Password">
+
+                                <p2 class="textRegPage">DuplicatePassword</p2>
+                                <input class="createInput" id="inputCreate3" type="password"  name="textlink" placeholder="Password">
+
+                                <button class="buttonRefAut aytoreg" id="regAut">Registration</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="nomer3">
+                    <div class="content2">
+                        <div class="registrationElements">
+                            <div class="chendgReg2">
+                                <img class="mainPng2" src="/ForPicher/online-registration.png" alt="Опис зображення">
+                                <button class="buttonRefAut" onclick="hideOll(),registr(), open123()">Registration</button>
+                            </div>
+                            <div class="chendgReg">
+                                <img class="mainPng2" src="/ForPicher/authorization.png" alt="Опис зображення">
+                                <button class="buttonRefAut">Authorization</button>
+                            </div>
+
+                            <div class="reginfo">
+                                <p2 class="textRegPage">Gmail</p2>
+                                <input class="createInput" id="inputCreate4" type="text"  name="textlink" placeholder="Gmail">
+
+                                <p2 class="textRegPage">Password</p2>
+                                <input class="createInput" id="inputCreate5" type="password"  name="textlink" placeholder="Password">
+
+                                <button class="buttonRefAut aytoreg">Authorization</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+
+        </div>
+    </body>
+</html>
